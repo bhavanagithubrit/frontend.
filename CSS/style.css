@@ -1,0 +1,57 @@
+#innerbox{
+   /* width: 80%; */
+   /* width:80vw; */
+   width:20em;
+   height:300px;
+   background-color: red;
+}
+
+#outerbox{
+   width: 50%;
+   height:400px;
+   background-color: gold;
+}
+  
+.rectangle{
+   width: 50%;
+   height: 10px;
+   background-color: aqua;
+   border: red dotted;
+}
+   
+   
+   
+   
+   #secpar{ 
+    color:aquamarine;
+ } 
+ h1{ 
+    color: bisque;
+ } 
+/*text properties*/
+ p{ 
+    text-align: justify; 
+    /*line-height: 30px;
+    letter-spacing: 10px;
+    /* word-spacing: 20px;*/ 
+    /* text-transform: uppercase; */
+    /* text-decoration-line: line-through; */
+    /* text-decoration-color: black; */
+    /* text-decoration-style: double; */
+    /* text-decoration: overline red dashed 2px; */
+    /* text-shadow: blue 20px 10px 5px; */
+    /* color right-shift downshift spread */
+     background-image: url("download (1).jpg");
+     /* background-image: url(C:\Users\bhava\OneDrive\Desktop\next gen\download (1).jpg); */
+
+} 
+/* font properties */
+#firstpar {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+    background-image: url("rdd.jpg.jpg"); 
+}
+

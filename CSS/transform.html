@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      #box
+      {
+        background: repeating-radial-gradient(red 30%,green, blue,yellow);
+        width: 200px;
+        height:300px;
+        margin: 100px;
+        transition-property: transform 5s 2s;
+       
+
+        /* transform: scale(2); */
+      }
+      /* pseudo selector */
+      #box:hover{
+        /* transform:scale(3) rotate(180 degree); */
+        transform: translate(300px) rotate(180deg);
+      }
+       #box2
+      {
+        background-color: green;
+        width: 200px;
+        height:300px;
+        margin: 100px;
+      
+       
+
+        /* transform: scale(2); */
+      }
+
+       #circle
+      {
+        background-color: green;
+        width: 200px;
+        height:300px;
+        margin: 100px;
+        
+      
+       
+
+        /* transform: scale(2); */
+      }
+
+      #box2:hover{
+         background-color: blue;
+         width: 200px;
+      }
+
+   </style>
+</head>
+<body>
+    <div id="box">
+          <span style="color:white;font-size: 30px;">Box</span>
+    </div>
+
+    <div id="box2">
+          <span style="color:white;font-size: 30px;">Box</span>
+    </div>
+
+    <div id="circle">
+          <span style="color:white;font-size: 30px;">Box</span>
+    </div>
+</body>
+</html>

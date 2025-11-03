@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bigger Textbox Example</title>
+</head>
+<body>
+
+  <h2>Bigger Textbox Example</h2>
+
+  <label for="address">Address:</label><br>
+  <textarea id="address" name="address" 
+            rows="6" cols="60" 
+            style="width:400px; height:120px;" 
+            placeholder="Enter your address here"></textarea>
+
+  <h2>Select Your Semester</h2>
+
+  <label for="semester">Semester:</label><br>
+  <select id="semester" name="semester">
+    <option value="">--Select Semester--</option>
+    <option value="1">1st Semester</option>
+    <option value="2">2nd Semester</option>
+    <option value="3">3rd Semester</option>
+    <option value="4">4th Semester</option>
+    <option value="5">5th Semester</option>
+    <option value="6">6th Semester</option>
+    <option value="7">7th Semester</option>
+    <option value="8">8th Semester</option>
+  </select>
+
+  
+
+  <h2>Choose Your Department</h2>
+
+  <label for="dept">Department:</label><br>
+  <input list="departments" id="dept" name="dept" placeholder="Type or select department">
+
+  <!-- Datalist with options -->
+  <datalist id="departments">
+    <option value="Computer Science">
+    <option value="Information Technology">
+    <option value="Electronics and Communication">
+    <option value="Mechanical Engineering">
+    <option value="Civil Engineering">
+    <option value="Electrical Engineering">
+  </datalist>
+
+
+
+
+</body>
+</html>

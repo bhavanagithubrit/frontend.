@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Circle Overlap Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f4f4f4;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    #circle1 {
+      background: skyblue;
+      top: 100px;
+      z-index: 1;
+      transition: top 3s linear, z-index 0s 1.5s; /* slow-mo + z-index delay */
+    }
+
+    #circle2 {
+      background: tomato;
+      top: 300px;
+      z-index: 2;
+    }
+
+    .move {
+      top: 300px; /* moves down to overlap */
+      z-index: 0; /* goes under circle2 */
+    }
+  </style>
+</head>
+<body>
+  <div id="circle1" class="circle"></div>
+  <div id="circle2" class="circle"></div>
+
+  <script>
+    // Trigger animation after 1 second
+    setTimeout(() => {
+      document.getElementById("circle1").classList.add("move");
+    }, 1000);
+  </script>
+</body>
+</html>

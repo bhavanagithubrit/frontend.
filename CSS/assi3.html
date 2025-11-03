@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Circle Hover Effect</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: white;
+    }
+
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid black;
+      position: absolute;
+      transition: z-index 1s ease, transform 1s ease;
+    }
+
+    .circle.red {
+      background: red;
+      left: -40px;
+      z-index: 2; /* On top initially */
+    }
+
+    .circle.black {
+      background: black;
+      left: 40px;
+      z-index: 1;
+    }
+
+    .circle.red:hover {
+      z-index: 0; /* Send it behind slowly */
+      transform: scale(1.01); /* Small smooth effect */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle red"></div>
+    <div class="circle black"></div>
+  </div>
+</body>
+</html>
+
+        
+       

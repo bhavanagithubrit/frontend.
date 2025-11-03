@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-size: 20px;
+            color: antiquewhite;
+
+        }
+        #parent/*container*/
+        {
+            /* width: 90%; */
+            /* height: 400px; */
+            border: red solid 5px;
+            display: grid;
+            /* grid-template-columns:repeat(5, 1fr); */
+            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-template-rows: 200px 200px 200px; */
+            /*justify-items: end; /*hor movement */ 
+            /*align-items: center;/*ver movemnt*/
+
+           
+        }
+        .child/*items*/
+        {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: solid green;
+        }
+        #c2{
+            grid-column: 2/4;
+        }
+        #c5{
+            grid-row: 2/5;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child" id="c1">
+            child1
+        </div>
+        <div class="child" id="c2">
+            child2
+        </div>
+        <div class="child" id="c3">
+            child3
+        </div>
+        <div class="child" id="c4">
+            child4
+        </div>
+        <div class="child" id="c5">
+            child5
+        </div>
+        <div class="child" id="c6">
+            child6
+        </div>
+        <div class="child" id="c7">
+            child7
+        </div>
+        <div class="child" id="c8">
+            child8
+        </div>
+    </div>
+</body>
+</html>
